@@ -1,0 +1,1 @@
+<?php echo "Your favorite color is  " . $_GET["favcolor"] ." and your favorite food is ". $_GET["favfood"]; ?>
