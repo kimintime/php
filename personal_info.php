@@ -30,14 +30,11 @@
         <p>
             Your interests:<br>
             <?php
-                $count = 5;
-                $i = 1;
-                while ($i <= $count) {
-                    echo "$i: ";
-                    echo "<input type=\"text\" name=\"interest$i\"><br>\n";
-                    $i++;
-                } 
-            ?>
+          for ($i = 0; $i < count($interests); $i++) {
+            echo "<input type=\"checkbox\" name=\"interest$i\">\n";
+            echo $interests[$i] . "<br>\n";
+          }
+        ?>
         </p>
         <p>
             <input type="submit" value="Send">
